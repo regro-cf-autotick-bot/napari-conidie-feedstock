@@ -1,13 +1,13 @@
 {% set name = "napari-conidie" %}
-{% set version = "0.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-conidie-{{ version }}.tar.gz
-  sha256: d9b074d61a6a684a350e4a3e654dc31dc24ae59767cb1a1a34c2a7dbdf262c0e
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: a75348cf61834afd91b6b8c53e24a1c36f1e8906d8bba3136ea7ab73221e8f9e
 
 build:
   noarch: python
